@@ -1,0 +1,5 @@
+Date,District,APMC_Name,Commodity,Arrival_Quantity_Qtl,Modal_Price_Rs_Qtl,Min_Price_Rs_Qtl,Max_Price_Rs_Qtl,Soil_Type,Water_Requirement,Season,Average_Yield_Tons_per_Ha,Typical_Costs_Rs_per_Ha,Export_Potential
+29-04-2025,Pune,Pune APMC,Soybean,2400,4200,4000,4400,Loam,Medium,Kharif,2.2,45000,Medium
+29-04-2025,Satara,Satara APMC,Pigeon Pea,1600,5200,5000,5400,Loam,Low,Kharif,1.8,35000,Low
+29-04-2025,Nashik,Lasalgaon APMC,Onion,3200,1600,1400,1800,Sandy,Medium,Rabi,15,120000,High
+29-04-2025,Pune,Pune APMC,Groundnut,1200,5000,4700,5300,Sandy,Medium,Kharif,2.5,60000,Medium
