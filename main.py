@@ -75,11 +75,11 @@ tabs = st.tabs(["🏠 Home", "🌱 Crop Recommendation", "💰 Economic Analysis
 @st.cache_resource
 def load_models():
     models = {
-        'crop': joblib.load(r'Models\model_crop_suitability.pkl'),
-        'yield': joblib.load(r'Models\model_yield_forecast.pkl'),
-        'price': joblib.load(r'Models\model_price_forecast.pkl'),
-        'profit': joblib.load(r'Models\model_profit_estimation.pkl'),
-        'risk': joblib.load(r'Models\model_risk_assessment.pkl')
+        'crop': joblib.load(os.path.join('Models', 'model_crop_suitability.pkl')),
+        'yield': joblib.load(os.path.join('Models', 'model_yield_forecast.pkl')),
+        'price': joblib.load(os.path.join('Models', 'model_price_forecast.pkl')),
+        'profit': joblib.load(os.path.join('Models', 'model_profit_estimation.pkl')),
+        'risk': joblib.load(os.path.join('Models', 'model_risk_assessment.pkl'))
     }
     return models
 
