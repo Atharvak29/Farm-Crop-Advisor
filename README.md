@@ -2,6 +2,7 @@
 
 An intelligent decision-support system that recommends the most suitable crop based on **soil**, **district**, **season**, and **water requirement** — empowering farmers and agri-businesses to make informed, data-driven crop selection decisions.
 
+A dashboard app to get advice and necessary statistics to decide a crop will suite your needs
 ---
 
 > "Sow data. Reap insights. Cultivate prosperity." 🌾
@@ -87,6 +88,26 @@ streamlit run main.py
 ```
 
 ---
+## Models currently loaded and used
+| Model KeyFile                  | Purpose                         | Used In                           |
+|---------------------------------|---------------------------------|-----------------------------------|
+| incropmodel_crop_suitability.pkl | Crop suitability prediction     | `predict_crop_suitability()` (inside recommendations) |
+| yieldmodel_yield_forecast.pkl    | Yield forecast                  | `predict_yield()`                 |
+| pricemodel_price_forecast.pkl    | Market price prediction       | `predict_market_price()`          |
+| profitmodel_profit_estimation.pkl| Profit estimation               | `predict_profitability()`         |
+| riskmodel_risk_assessment.pkl    | Risk assessment                 | `predict_risk()`                  |
+
+---
+
+## What’s missing / To be added (for accuracy + completeness)
+|Gap / Missing Item	|Reason it’s needed	|Suggestion|
+|-------------------|-------------------|----------|
+|Suitability Score is random (not from model)|	Currently assigning random suitability score np.random.randint(70,100) | Use actual model prediction probability (normalized as %)|
+|Real time weather api missing	| Currently using random Temerature, Rainfall, Humidity | Integrate weather api to get best predictions|
+|Real District names insted of numbers| User can't understand what state they are choosing| Endcode the data properly or showcase a tables vs the encoded value for user reference|
+|ETL Framework missing | Make a etl pipline that extracts data for real time data decision | Run a cronjob every data and fetch essesntial data from government website|
+
+---
 
 ## 📌 Future Work
 
@@ -98,8 +119,6 @@ streamlit run main.py
 
 ---
 
+# ETL Architecture
 
-=======
-# Farm-Crop-Advisor
-A dashboard app to get advice and necessary statistics to decide a crop will suite your needs
-
+![Image](https://github.com/user-attachments/assets/01371516-9ea5-4e8d-9642-970f64eac1dc)
