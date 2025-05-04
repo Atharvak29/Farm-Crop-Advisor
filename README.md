@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌾 Smart Farm Advisor
 
 An intelligent decision-support system that recommends the most suitable crop based on **soil**, **district**, **season**, and **water requirement** — empowering farmers and agri-businesses to make informed, data-driven crop selection decisions.
@@ -99,3 +100,7 @@ streamlit run app.py
 ---
 
 
+=======
+# Farm-Crop-Advisor
+A dashboard app to get advice and necessary statistics to decide a crop will suite your needs
+>>>>>>> ccf9e4f675d4c5beb49aeba17e922fee0adba0c8
