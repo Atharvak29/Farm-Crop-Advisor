@@ -87,11 +87,11 @@ def load_models():
 @st.cache_resource
 def load_encoders():
     encoders = {
-        'district': joblib.load(r'Models\encoder_district.pkl'),
-        'soil': joblib.load(r'Models\encoder_soil_type.pkl'),
-        'water': joblib.load(r'Models\encoder_water_requirement.pkl'),
-        'season': joblib.load(r'Models\encoder_season.pkl'),
-        'commodity': joblib.load(r'Models\encoder_commodity.pkl')
+        'district': joblib.load(os.path.join('Models', 'encoder_district.pkl')),
+        'soil': joblib.load(os.path.join('Models', 'encoder_soil_type.pkl')),
+        'water': joblib.load(os.path.join('Models', 'encoder_water_requirement.pkl')),
+        'season': joblib.load(os.path.join('Models', 'encoder_season.pkl')),
+        'commodity': joblib.load(os.path.join('Models', 'encoder_commodity.pkl'))
     }
     return encoders
 
@@ -99,7 +99,7 @@ def load_encoders():
 @st.cache_data
 def load_sample_data():
     try:
-        df = pd.read_csv(r"C:\Users\athud\OneDrive\Desktop\MSc\2nd Sem\Mini Project\Sample_data.csv")
+        df = pd.read_csv(r"Sample_data.csv")
         return df
     except FileNotFoundError:
         st.warning("Sample data file not found. Using dummy data.")
