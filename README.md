@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌾 Smart Farm Advisor
 
 An intelligent decision-support system that recommends the most suitable crop based on **soil**, **district**, **season**, and **water requirement** — empowering farmers and agri-businesses to make informed, data-driven crop selection decisions.
@@ -77,14 +76,14 @@ This project demonstrates:
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/agri-crop-recommender.git
-cd agri-crop-recommender
+git clone https://github.com/Atharvak29/Farm-Crop-Advisor.git
+cd Farm-Crop-Advisor
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run Streamlit app
-streamlit run app.py
+streamlit run main.py
 ```
 
 ---
@@ -103,4 +102,4 @@ streamlit run app.py
 =======
 # Farm-Crop-Advisor
 A dashboard app to get advice and necessary statistics to decide a crop will suite your needs
->>>>>>> ccf9e4f675d4c5beb49aeba17e922fee0adba0c8
+
